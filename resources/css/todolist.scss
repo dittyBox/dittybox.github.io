@@ -1,0 +1,50 @@
+@charset "utf-8";
+@use './Variable/var';
+@use './Styles/mixin';
+
+@include mixin.mobile {
+    .view {
+      width: 100px;
+    }
+  }
+  
+  @include mixin.tablet {
+    .view {
+      width: 200px;
+    }
+  }
+  
+  @include mixin.desktop {
+    .view {
+      width: 300px;
+    }
+  }
+
+.wrap {
+    display: flex;
+    grid-template-rows: 200px 1fr;
+    row-gap: 0px;
+    .header {
+        
+    }
+    .container {
+        &-header {
+    
+        }
+        .top-container {
+        
+        }
+        .bottom-container {
+            .section {
+                &-hearder {
+    
+                }
+                &-container {
+                    .item {
+                        width: var.$px10;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@media (min-width: 335px) and (max-width: 757px) {
+  .view {
+    width: 100px;
+  }
+}
+@media (min-width: 758px) and (max-width: 1023px) {
+  .view {
+    width: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  .view {
+    width: 300px;
+  }
+}
+.wrap {
+  display: flex;
+  grid-template-rows: 200px 1fr;
+  row-gap: 0px;
+}
+.wrap .container .bottom-container .section-container .item {
+  width: "10px";
+}/*# sourceMappingURL=todolist.css.map */
