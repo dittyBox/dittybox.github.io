@@ -14,7 +14,6 @@
   }
 }
 .html {
-  position: relative;
   width: 100%;
   min-width: 100%;
   min-height: 100vh;
@@ -22,36 +21,83 @@
 }
 
 .body {
-  margin: 0;
   height: 100vh;
   overflow: hidden;
 }
 
-.wrap {
+.body-wrap {
   display: flex;
-  height: 100vh;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.wrap {
+  padding-top: 70px;
+  display: flex;
+  height: 100%;
 }
 .wrap .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(0, 77, 255);
   height: 70px;
+  font-size: 12px;
+  color: #fff;
+}
+.wrap .header .icon-div {
+  padding: 0px 30px 0px 30px;
+}
+.wrap .header .header-f {
+  font-size: 14px;
+  color: #c7c7c7;
+}
+.wrap .header .on {
+  color: #fff !important;
+}
+.wrap .container-header {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.wrap .container-header .team-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+.wrap .container .top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 85px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .wrap .container .bottom-container .section-container .item {
   width: "10px";
 }
 
-.search-form {
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-box {
   position: relative;
   top: 50%;
   left: 50%;
   width: 350px;
   height: 40px;
-  border-radius: 40px;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border: #c7c8c9 solid 1px;
   transform: translate(-50%, -50%);
   background: #fff;
   transition: all 0.3s ease;
 }
-.search-form.focus {
+.search-box.focus {
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -59,7 +105,7 @@
   position: absolute;
   top: 10px;
   left: 38px;
-  font-size: 14px;
+  font-size: 15px;
   background: none;
   color: #5a6674;
   width: 195px;
@@ -85,8 +131,10 @@
   margin: 0;
   border: none;
   background: none;
+  font-size: 18px;
   outline: none !important;
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .search-option {
@@ -107,4 +155,8 @@
   left: 0;
   opacity: 0.01;
   cursor: pointer;
+}
+
+.header-icon {
+  font-size: 30px;
 }/*# sourceMappingURL=todolist.css.map */

@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel='stylesheet' type='text/css' href='./resources/css/todolist.css?ver=0.0.0' />
     <script src="https://kit.fontawesome.com/33b39ec391.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css' href='./resources/css/todolist.css?ver=0.0.0' />
     <title>Todo List</title>
 </head>
+
 <body>
-    <div class="wrap view">
+<div class="body-wrap">
+    <div class="wrap view flex-c">
         <div class="header view">
-
+            <div class="icon-div">
+                <i class="fa-sharp fa-solid fa-chart-simple header-icon"></i>
+                <span class="header-f on">Backlog</span>
+            </div>
+            <div class="icon-div">
+                <i class="fa-sharp fa-solid fa-chart-simple header-icon"></i>
+                <span class="header-f">Board</span>
+            </div>
+            <div class="icon-div">
+                <i class="fa-sharp fa-solid fa-chart-simple header-icon"></i>
+                <span class="header-f">Feed</span>
+            </div>
+            <div class="icon-div">
+                <i class="fa-sharp fa-solid fa-chart-simple header-icon"></i>
+                <span class="header-f">Report</span>
+            </div>
         </div>
-        <div class="container">
+        <div class="container flex-i">
             <div class="container-header">
-
-                <i class="fa-regular fa-magnifying-glass"></i>
+                <div class="team-title">
+                    Product Design Team
+                </div>
             </div>
             <div class="top-container">
-                <div class="search-form">
-                    <input type="search" value="" placeholder="Search Items" class="search-input">
-                    <button type="submit" class="search-button">
-                      <div class="submit-button">
-                        <i class="fa-regular fa-magnifying-glass"></i>
-                      </div>
-                    </button>
-                  </div>
+                <div class="search-div">
+                    <div class="search-box">
+                        <input type="search" value="" placeholder="Search Items" class="search-input">
+                        <button type="submit" class="search-button">
+                            <div class="submit-button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="btn-div">
+
+                </div>
             </div>
             <div class="bottom-container">
                 <div class="section">
@@ -42,5 +66,7 @@
             </div>
         </div>
     </div>
+</div>
 </body>
+
 </html>
