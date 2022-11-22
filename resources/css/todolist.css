@@ -49,11 +49,15 @@
   padding: 0px 30px 0px 30px;
 }
 .wrap .header .header-f {
-  font-size: 14px;
+  font-size: 20px;
   color: #c7c7c7;
+  opacity: 0.6;
+  color: #dfdfdf;
+  padding-left: 7px;
 }
 .wrap .header .on {
   color: #fff !important;
+  opacity: 1 !important;
 }
 .wrap .container-header {
   height: 60px;
@@ -75,6 +79,29 @@
   height: 85px;
   margin-left: 25px;
   margin-right: 25px;
+}
+.wrap .container .top-container .btn-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wrap .container .top-container .btn-div .btn {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  align-items: center;
+  border: #c7c8c9 solid 1px;
+  border-radius: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.wrap .container .top-container .btn-div .btn .btn-icon {
+  padding: 5px;
+}
+.wrap .container .top-container .btn-div .btn .btn-title {
+  padding: 5px;
 }
 .wrap .container .bottom-container .section-container .item {
   width: "10px";
@@ -158,5 +185,23 @@
 }
 
 .header-icon {
-  font-size: 30px;
+  font-size: 25px;
+  opacity: 0.6;
+  color: #dfdfdf;
+}
+
+.bc-blue {
+  background-color: rgb(0, 77, 255);
+}
+
+.bc-white {
+  background-color: rgb(248, 249, 251);
+}
+
+.fc-darkwhite {
+  color: rgb(156, 161, 164);
+}
+
+.fc-white {
+  color: rgb(248, 249, 251);
 }/*# sourceMappingURL=todolist.css.map */
