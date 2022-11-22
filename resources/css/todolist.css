@@ -1,23 +1,110 @@
 @media (min-width: 335px) and (max-width: 757px) {
   .view {
-    width: 100px;
+    width: 100%;
   }
 }
 @media (min-width: 758px) and (max-width: 1023px) {
   .view {
-    width: 200px;
+    width: 850px;
   }
 }
 @media (min-width: 1024px) {
   .view {
-    width: 300px;
+    width: 1500px;
   }
 }
+.html {
+  position: relative;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .wrap {
   display: flex;
-  grid-template-rows: 200px 1fr;
-  row-gap: 0px;
+  height: 100vh;
+}
+.wrap .header {
+  background-color: rgb(0, 77, 255);
+  height: 70px;
 }
 .wrap .container .bottom-container .section-container .item {
   width: "10px";
+}
+
+.search-form {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 40px;
+  border-radius: 40px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translate(-50%, -50%);
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.search-form.focus {
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.search-input {
+  position: absolute;
+  top: 10px;
+  left: 38px;
+  font-size: 14px;
+  background: none;
+  color: #5a6674;
+  width: 195px;
+  height: 20px;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+}
+.search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.search-button {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  outline: none !important;
+  cursor: pointer;
+}
+
+.search-option {
+  position: absolute;
+  text-align: right;
+  top: 10px;
+  right: 15px;
+}
+.search-option div {
+  position: relative;
+  display: inline-block;
+  margin: 0 1px;
+  cursor: pointer;
+}
+.search-option div input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.01;
+  cursor: pointer;
 }/*# sourceMappingURL=todolist.css.map */
