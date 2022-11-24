@@ -23,6 +23,7 @@
 .body {
   height: 100vh;
   overflow: hidden;
+  font-size: 15px;
 }
 
 .body-wrap {
@@ -102,6 +103,33 @@
 }
 .wrap .container .top-container .btn-div .btn .btn-title {
   padding: 5px;
+}
+.wrap .container .bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.wrap .container .bottom-container .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-grow: 1;
+  background-color: #c7c8c9;
+}
+.wrap .container .bottom-container .section-hearder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap .container .bottom-container .section-hearder .btn-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
 }
 .wrap .container .bottom-container .section-container .item {
   width: "10px";
@@ -204,4 +232,12 @@
 
 .fc-white {
   color: rgb(248, 249, 251);
+}
+
+.cc {
+  cursor: pointer;
+}
+
+.stack-in-icon {
+  font-size: 10px;
 }/*# sourceMappingURL=todolist.css.map */

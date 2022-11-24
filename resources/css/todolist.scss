@@ -29,6 +29,7 @@
 .body {
   height: 100vh;
   overflow: hidden;
+  font-size: 15px;
 }
 .body-wrap {
   display: flex;
@@ -112,8 +113,33 @@
     }
 
     .bottom-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
       .section {
-        &-hearder {}
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-grow: 1;
+        background-color: #c7c8c9;
+        &-hearder {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          .header-div {
+
+          }
+          .btn-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 60px;
+          }
+        }
 
         &-container {
           .item {
@@ -223,3 +249,12 @@
 .fc-white {
   color: var.$c-white;
 }
+
+.cc {
+  cursor: pointer;
+}
+
+.stack-in-icon {
+  font-size: 10px;
+}
+
