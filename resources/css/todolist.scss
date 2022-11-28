@@ -158,10 +158,11 @@
             border: var.$bc-line solid 1px;
             border-radius: 10px;
             margin-top: 20px;
+            box-shadow: 5px 5px 5px 2px rgb(236, 236, 238);
             &-header {
               display: flex;
               justify-content: flex-start;
-              align-items: flex-end;;
+              align-items: flex-end;
               height: 35px;
               padding-left: 15px;
               &-title {
@@ -170,9 +171,24 @@
               }
             }
             &-contents {
-              overflow:hidden;
-              word-wrap:break-word;
+              display: flex;
+              flex-direction: column;
               padding: 15px;
+              .cont {
+                overflow:hidden;
+                word-wrap:break-word;
+              }
+            }
+            .cp-box {
+              display: flex;
+              flex-direction: row;
+              margin-bottom: 20px;
+              &-title {
+                padding: 3px 10px 3px 10px;
+                margin-left: 15px;
+                font-size: 13px;
+                font-weight:700;
+              }
             }
             &-clip {
               display: flex;
@@ -181,7 +197,6 @@
               align-items: center;
               height: 30px;
               padding-bottom: 5px;
-              border-top: var.$bc-line solid 1px;
               .clip-file {
                 display: flex;
                 flex-direction: row;
@@ -317,6 +332,23 @@
 }
 .fc-green {
   color: rgb(134, 253, 78);
+}
+
+.cpc-green {
+  color: rgb(85, 199, 32);
+  background-color: rgb(225, 250, 214);
+}
+.cpc-pink {
+  color: rgb(199, 32, 143);
+  background-color: rgb(252, 217, 243);
+}
+.cpc-blue {
+  color: rgb(35, 32, 199);
+  background-color: rgb(219, 220, 253);
+}
+.cpc-orange {
+  color: rgb(199, 127, 32);
+  background-color: rgb(253, 245, 219);
 }
 
 .cc {

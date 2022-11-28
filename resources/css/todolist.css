@@ -152,6 +152,7 @@
   border: rgb(226, 226, 226) solid 1px;
   border-radius: 10px;
   margin-top: 20px;
+  box-shadow: 5px 5px 5px 2px rgb(236, 236, 238);
 }
 .wrap .container .bottom-container .section-container .item-header {
   display: flex;
@@ -165,9 +166,24 @@
   font-weight: bold;
 }
 .wrap .container .bottom-container .section-container .item-contents {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.wrap .container .bottom-container .section-container .item-contents .cont {
   overflow: hidden;
   word-wrap: break-word;
-  padding: 15px;
+}
+.wrap .container .bottom-container .section-container .item .cp-box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.wrap .container .bottom-container .section-container .item .cp-box-title {
+  padding: 3px 10px 3px 10px;
+  margin-left: 15px;
+  font-size: 13px;
+  font-weight: 700;
 }
 .wrap .container .bottom-container .section-container .item-clip {
   display: flex;
@@ -176,7 +192,6 @@
   align-items: center;
   height: 30px;
   padding-bottom: 5px;
-  border-top: rgb(226, 226, 226) solid 1px;
 }
 .wrap .container .bottom-container .section-container .item-clip .clip-file {
   display: flex;
@@ -309,6 +324,26 @@
 
 .fc-green {
   color: rgb(134, 253, 78);
+}
+
+.cpc-green {
+  color: rgb(85, 199, 32);
+  background-color: rgb(225, 250, 214);
+}
+
+.cpc-pink {
+  color: rgb(199, 32, 143);
+  background-color: rgb(252, 217, 243);
+}
+
+.cpc-blue {
+  color: rgb(35, 32, 199);
+  background-color: rgb(219, 220, 253);
+}
+
+.cpc-orange {
+  color: rgb(199, 127, 32);
+  background-color: rgb(253, 245, 219);
 }
 
 .cc {
