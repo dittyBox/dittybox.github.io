@@ -179,7 +179,7 @@
   flex-direction: row;
   margin-bottom: 20px;
 }
-.wrap .container .bottom-container .section-container .item .cp-box-title {
+.wrap .container .bottom-container .section-container .item .cp-box .cp-box-title {
   padding: 3px 10px 3px 10px;
   margin-left: 15px;
   font-size: 13px;
