@@ -179,11 +179,11 @@
                 word-wrap:break-word;
               }
             }
-            .cp-box {
+            &-cp-box {
               display: flex;
               flex-direction: row;
               margin-bottom: 20px;
-              .cp-box-title {
+              &-title {
                 padding: 3px 10px 3px 10px;
                 margin-left: 15px;
                 font-size: 13px;
