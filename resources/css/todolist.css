@@ -371,6 +371,10 @@
   z-index: 1;
 }
 
+.modal-off{
+  display: none;
+}
+
 .modal{
   background-color:#fff;
   color:#333;
