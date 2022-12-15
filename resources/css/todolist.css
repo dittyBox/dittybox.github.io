@@ -357,3 +357,136 @@
 .hear-in-icon {
   font-size: 23px;
 }/*# sourceMappingURL=todolist.css.map */
+
+
+/* modal-container */
+.modal-container{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-color:rgba(0, 0, 0, 0.5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index: 1;
+}
+
+.modal{
+  background-color:#fff;
+  color:#333;
+  border-radius: 5px;
+  overflow:hidden;
+}
+
+.top-modal{
+  background-color:#f1f1f5;
+  position:relative;
+}
+
+.modal-title{
+  font-size:20px;
+  text-align:center;
+  line-height:60px;
+  font-weight:bold;
+}
+
+.bottom-modal{
+  padding:30px;
+}
+
+.content-row{
+  padding:20px 0;
+}
+
+.bottom-modal label{
+  display:inline-block;
+  font-size:16px;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+
+.bottom-modal input, .bottom-modal textarea{
+  width:500px;
+}
+
+.bottom-modal input{
+  line-height:35px;
+}
+.bottom-modal textarea{
+  height: 150px;
+}
+
+.bottom-modal .btn-row{
+  display:flex;
+  justify-content:end;
+}
+
+
+/* btn 디자인 공통 */
+.btn{
+  display:block;
+  cursor:pointer;
+  border:0;
+  color:#fff;
+  background-color:transparent;
+  line-height:35px;
+  padding:0 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight:500;
+  margin:0 5px;
+}
+
+.btn.btn-main{
+  background-color:rgb(0, 77, 255);
+  color:#fff;
+}
+
+.btn.btn-white{
+  background-color:#fff;
+  border:1px solid #dbdbdb;
+  color:#333;
+}
+
+.btn.close-btn{
+  width:30px;
+  line-height:30px;
+  font-size:18px;
+  color:#666;
+  position: absolute;
+  top:15px;
+  right:25px;
+}
+
+.btn.btn-main:hover{
+background-color:rgb(0, 61, 202);
+}
+
+.btn.btn-white:hover{
+  background-color:#f8f8fa;
+}
+
+
+/* input, textarea 디자인 공통 */
+input, textarea{
+  display:block;
+  width:100%;
+  border:1px solid #dbdbdb;
+  padding:0 10px;
+}
+
+textarea{
+  padding:10px;
+}
+
+input::placeholder, textarea::placeholder {
+  color:#999;
+}
+
+input:focus, textarea:focus{
+  outline:none;
+}
+
+input:focus, textarea:focus{
+  border:1px solid rgb(0, 77, 255);
+}
